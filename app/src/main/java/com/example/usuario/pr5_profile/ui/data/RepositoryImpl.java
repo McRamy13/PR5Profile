@@ -46,4 +46,6 @@ public class RepositoryImpl implements Repository {
     public void editAvatar(Avatar avatar, int position) {
         database.editAvatar(avatar,  position);
     }
+
+    public void restoreAvatar(Avatar avatar, int position) { database.restoreAvatar(avatar, position); }
 }

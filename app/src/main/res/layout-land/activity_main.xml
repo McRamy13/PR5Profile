@@ -68,7 +68,7 @@
         android:layout_height="0dp"
         android:layout_marginEnd="@dimen/margin_small"
         android:layout_marginStart="@dimen/margin_small"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="@dimen/margin_small"
         android:text="@string/activity_main_lblNameText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -147,7 +147,7 @@
         app:layout_constraintTop_toBottomOf="@+id/activity_main_lblEmail"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/ic_action_email"
-        android:contentDescription="TODO" />
+        />
 
     <ImageView
         android:id="@+id/activity_main_imgPhone"
@@ -160,7 +160,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tivity_main_lblPhone"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/ic_action_phone"
-        android:contentDescription="TODO" />
+        />
 
 
     <TextView
@@ -200,7 +200,7 @@
         app:layout_constraintTop_toBottomOf="@+id/activity_main_lblAddress"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/ic_action_map"
-        android:contentDescription="TODO" />
+        />
 
     <TextView
         android:id="@+id/activity_main_lblWeb"
@@ -239,7 +239,7 @@
         app:layout_constraintTop_toBottomOf="@+id/activity_main_lblWeb"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/ic_action_web"
-        android:contentDescription="TODO" />
+        />
 
 
 </android.support.constraint.ConstraintLayout>

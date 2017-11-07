@@ -28,4 +28,5 @@
     <string name="apply">Apply</string>
     <string name="undo">undo</string>
     <string name="snackbar_message">Deleted item</string>
+    <string name="catListActivity_deletedProfileMessage">Profile deleted</string>
 </resources>

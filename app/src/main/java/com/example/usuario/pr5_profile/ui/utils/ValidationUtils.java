@@ -3,6 +3,8 @@ package com.example.usuario.pr5_profile.ui.utils;
 import android.text.TextUtils;
 import android.util.Patterns;
 
+import org.w3c.dom.Text;
+
 public class ValidationUtils {
 
     private ValidationUtils() {
@@ -23,4 +25,5 @@ public class ValidationUtils {
     public static boolean isValidAddress(String address) {
         return !TextUtils.isEmpty(address);
     }
+
 }

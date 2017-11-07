@@ -309,7 +309,7 @@ public class MainActivity extends AppCompatActivity {
 
     //endregion
 
-
+    //region
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -353,6 +353,7 @@ public class MainActivity extends AppCompatActivity {
         }
         return isEmpty;
     }
+    //endregion
 
     //onTextChange
     //region

@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -49,7 +50,8 @@ public class GridCatsActivity extends AppCompatActivity {
     ImageView gridCatsImgCat6;
     @BindView(R.id.grid_cats_lblCat6Name)
     TextView gridCatsLblCat6Name;
-
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
     //endregion
 
     @Override
@@ -57,15 +59,25 @@ public class GridCatsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grid_cats);
         initViews();
-        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        changePressedToolbarItemAction();
         obtainIntentData();
     }
-
+    //intitial methods
+    //region
     private void initViews() {
         ButterKnife.bind(this);
         setCatsTag();
+    }
+
+    private void changePressedToolbarItemAction() {
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
     }
 
     //set the cats tag
@@ -89,7 +101,7 @@ public class GridCatsActivity extends AppCompatActivity {
         catTagList.add(gridCatsImgCat5);
         catTagList.add(gridCatsImgCat6);
     }
-
+    //endregion
     //onclicks
     //region
     @OnClick({R.id.grid_cats_imgCat1, R.id.grid_cats_lblCat1Name})
@@ -100,22 +112,13 @@ public class GridCatsActivity extends AppCompatActivity {
         putCatExtraData();
     }
 
-    //modify the current avatar
-    private Avatar modifyCatAvatar(TextView lblCatName, int catResId) {
-        Avatar newCatAvatar = new Avatar();
-        String newName = String.valueOf(lblCatName.getText());
-        newCatAvatar.setCatName(newName);
-        newCatAvatar.setCatTag(catResId);
-        return newCatAvatar;
-    }
-
-
     @OnClick({R.id.grid_cats_imgCat2, R.id.grid_cats_lblCat2Name})
     public void onGridCatsImgCat2Clicked() {
         int resId = (int) gridCatsImgCat2.getTag();
         avatar = modifyCatAvatar(gridCatsLblCat2Name, resId);
         putCatExtraData();
     }
+
 
     @OnClick({R.id.grid_cats_imgCat3, R.id.grid_cats_lblCat3Name})
     public void onGridCatsImgCat3Clicked() {
@@ -124,7 +127,6 @@ public class GridCatsActivity extends AppCompatActivity {
         putCatExtraData();
 
     }
-
 
     @OnClick({R.id.grid_cats_imgCat4, R.id.grid_cats_lblCat4Name})
     public void onGridCatsImgCat4Clicked() {
@@ -147,6 +149,16 @@ public class GridCatsActivity extends AppCompatActivity {
         int resId = (int) gridCatsImgCat6.getTag();
         avatar = modifyCatAvatar(gridCatsLblCat6Name, resId);
         putCatExtraData();
+    }
+
+
+    //modify the current avatar
+    private Avatar modifyCatAvatar(TextView lblCatName, int catResId) {
+        Avatar newCatAvatar = new Avatar();
+        String newName = String.valueOf(lblCatName.getText());
+        newCatAvatar.setCatTag(catResId);
+        newCatAvatar.setCatName(newName);
+        return newCatAvatar;
     }
 
     //endregion
@@ -181,7 +193,7 @@ public class GridCatsActivity extends AppCompatActivity {
 
     }
 
-    //endregion
+
     private void applySelectedImage(Avatar avatar) {
         //set the selected image
         Boolean isEqual = false;
@@ -201,4 +213,5 @@ public class GridCatsActivity extends AppCompatActivity {
             catTagList.get(0).setAlpha((float) 0.5);
         }
     }
+    //endregion
 }

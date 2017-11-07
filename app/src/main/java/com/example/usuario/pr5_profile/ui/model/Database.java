@@ -41,4 +41,8 @@ public class Database {
     public void editAvatar(Avatar avatar, int position) {
         avatars.set(position, avatar);
     }
+
+    public void restoreAvatar(Avatar avatar, int position) {
+        avatars.add(position, avatar);
+    }
 }

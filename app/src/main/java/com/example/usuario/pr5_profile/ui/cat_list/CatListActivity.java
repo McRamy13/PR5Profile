@@ -58,29 +58,26 @@ public class CatListActivity extends AppCompatActivity {
 
     }
 
-
+    //initial methods
+    //region
     private void setListData() {
         //set first the empty view
         mRepository = RepositoryImpl.getInstance(Database.getInstance());
         contentCatListLstCats.setEmptyView(empty_view_parentConstraint);
         mAdapter = new CatListAdapter(this, mRepository.getAvatars());
         contentCatListLstCats.setAdapter(mAdapter);
-
-
     }
 
     private void initViews() {
         ButterKnife.bind(this);
     }
+    //endregion
 
+    //onclicks
+    //region
     @OnClick(R.id.cat_list_fabAddProfile)
     public void onFabAddProfileClick(View v) {
         callActivity();
-    }
-
-    private void callActivity() {
-        Avatar avatar = new Avatar();
-        MainActivity.startForResult(this, RC_CAT_LIST_ACTIVITY, avatar, DEFAULT_POSITION);
     }
 
     //on list item click
@@ -94,14 +91,28 @@ public class CatListActivity extends AppCompatActivity {
 
     //onLongClick
     @OnItemLongClick(R.id.content_cat_list_lstCats)
-    boolean onCatlistLongItemClick(int position) {
-        Avatar avatar;
-        //delete data
+    boolean onCatlistLongItemClick(final int position) {
+        final Avatar profile;
+        //delete data but, before we need to save the avatar
+        profile = (Avatar) mAdapter.getItem(position);
         mRepository.deleteAvatar(position);
         mAdapter.notifyDataSetChanged();
+        Snackbar.make(contentCatListLstCats, R.string.catListActivity_deletedProfileMessage, Snackbar.LENGTH_LONG)
+                .setAction(R.string.undo, new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        restoreProfile(profile, position);
+                    }
+                }).show();
         return true;
     }
 
+    private void callActivity() {
+        Avatar avatar = new Avatar();
+        MainActivity.startForResult(this, RC_CAT_LIST_ACTIVITY, avatar, DEFAULT_POSITION);
+    }
+    //endregion
+    //region
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         Avatar avatar;
@@ -151,4 +162,12 @@ public class CatListActivity extends AppCompatActivity {
             contentCatListLstCats.onRestoreInstanceState(mListState);
         }
     }
+
+    //data manage methdos
+
+    private void restoreProfile(Avatar avatar, int position) {
+        mRepository.restoreAvatar(avatar,position);
+        mAdapter.notifyDataSetChanged();
+    }
+    //endregion
 }

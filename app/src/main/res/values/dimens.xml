@@ -4,4 +4,6 @@
     <dimen name="normal_text_dimen">18sp</dimen>
     <dimen name="margin_start_medium">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="card_elevation_dimen">8dp</dimen>
+    <dimen name="card_corner_radius_dimen">3dp</dimen>
 </resources>

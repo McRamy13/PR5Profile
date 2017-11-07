@@ -27,4 +27,7 @@
     <string name="title_main_activity">Perfil</string>
     <string name="empty_view_lblMessageText">Lo sentimos, no hemos encontrado usuarios en nuestra BD.\n Agregue uno</string>
     <string name="apply">Aplicar</string>
+    <string name="undo">Deshacer</string>
+    <string name="snackbar_message">Elemento eliminado</string>
+    <string name="catListActivity_deletedProfileMessage">Perfil eliminado</string>
 </resources>
