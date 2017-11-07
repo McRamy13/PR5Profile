@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/grid_cats_imgCat1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@id/content_grid_cats_horizontalTopGuideline"
+        app:layout_constraintRight_toLeftOf="@id/content_grid_cats_verticalGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cat1" />
+
+
+    <TextView
+        android:id="@+id/grid_cats_lblCat1Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginStart="@dimen/margin_small"
+        android:background="@color/colorAccent"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingHorizontal="@dimen/padding_small"
+        android:paddingVertical="@dimen/padding_small"
+        android:text="@string/activity_main_txtCatNameText"
+        android:textColor="@android:color/background_light"
+        android:textSize="@dimen/normal_text_dimen"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/grid_cats_imgCat3"
+        app:layout_constraintEnd_toStartOf="@+id/grid_cats_imgCat2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/grid_cats_imgCat2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@id/content_grid_cats_horizontalTopGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/content_grid_cats_verticalGuideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cat2" />
+
+    <TextView
+        android:id="@+id/grid_cats_lblCat2Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginStart="@dimen/margin_small"
+        android:background="@color/colorAccent"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingHorizontal="@dimen/padding_small"
+        android:paddingVertical="@dimen/padding_small"
+        android:text="@string/activity_main_lblCat2NameText"
+        android:textColor="@android:color/background_light"
+        android:textSize="@dimen/normal_text_dimen"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/grid_cats_imgCat4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/grid_cats_imgCat2" />
+
+    <ImageView
+        android:id="@+id/grid_cats_imgCat3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@id/content_grid_cats_horizontalMidGuideline"
+        app:layout_constraintRight_toLeftOf="@id/content_grid_cats_verticalGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/content_grid_cats_horizontalTopGuideline"
+        app:srcCompat="@drawable/cat3" />
+
+    <TextView
+        android:id="@+id/grid_cats_lblCat3Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginStart="@dimen/margin_start_medium"
+        android:background="@color/colorAccent"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingHorizontal="@dimen/padding_small"
+        android:paddingVertical="@dimen/padding_small"
+        android:text="@string/activity_main_lblCat3NameText"
+        android:textColor="@android:color/background_light"
+        android:textSize="@dimen/normal_text_dimen"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/grid_cats_imgCat5"
+        app:layout_constraintEnd_toStartOf="@+id/grid_cats_imgCat4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/grid_cats_imgCat4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@id/content_grid_cats_horizontalMidGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/content_grid_cats_verticalGuideline"
+        app:layout_constraintTop_toBottomOf="@id/content_grid_cats_horizontalTopGuideline"
+        app:srcCompat="@drawable/cat4" />
+
+    <TextView
+        android:id="@+id/grid_cats_lblCat4Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginStart="@dimen/margin_small"
+        android:background="@color/colorAccent"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingHorizontal="@dimen/padding_small"
+        android:paddingVertical="@dimen/padding_small"
+        android:text="@string/activity_main_lblCat4NameText"
+        android:textColor="@android:color/background_light"
+        android:textSize="@dimen/normal_text_dimen"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/grid_cats_imgCat6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/grid_cats_imgCat4" />
+
+    <ImageView
+        android:id="@+id/grid_cats_imgCat5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/content_grid_cats_verticalGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/content_grid_cats_horizontalMidGuideline"
+        app:srcCompat="@drawable/cat5" />
+
+    <TextView
+        android:id="@+id/grid_cats_lblCat5Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginStart="@dimen/margin_small"
+        android:background="@color/colorAccent"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingHorizontal="@dimen/padding_small"
+        android:paddingVertical="@dimen/padding_small"
+        android:text="@string/activity_main_lblCat5NameText"
+        android:textColor="@android:color/background_light"
+        android:textSize="@dimen/normal_text_dimen"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/grid_cats_imgCat5"
+        app:layout_constraintEnd_toStartOf="@+id/grid_cats_imgCat6"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/grid_cats_imgCat5" />
+
+    <ImageView
+        android:id="@+id/grid_cats_imgCat6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/content_grid_cats_verticalGuideline"
+        app:layout_constraintTop_toBottomOf="@id/content_grid_cats_horizontalMidGuideline"
+        app:srcCompat="@drawable/cat6" />
+
+    <TextView
+        android:id="@+id/grid_cats_lblCat6Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginStart="@dimen/margin_small"
+        android:background="@color/colorAccent"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingHorizontal="@dimen/padding_small"
+        android:paddingVertical="@dimen/padding_small"
+        android:text="@string/activity_main_txtCat6NameText"
+        android:textColor="@android:color/background_light"
+        android:textSize="@dimen/normal_text_dimen"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/grid_cats_imgCat6"
+        app:layout_constraintEnd_toEndOf="@+id/grid_cats_imgCat6"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/grid_cats_imgCat6" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/content_grid_cats_verticalGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/content_grid_cats_horizontalTopGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.34" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/content_grid_cats_horizontalMidGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.66" />
+
+</android.support.constraint.ConstraintLayout>

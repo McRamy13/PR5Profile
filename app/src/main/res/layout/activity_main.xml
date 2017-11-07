@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.usuario.pr5_profile.ui.main.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        tools:ignore="Overdraw"/>
+
+    <ImageView
+        android:id="@+id/activity_main_imgCat"
+        android:layout_width="411dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/activity_main_ImageSeparator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_toolbar"
+        app:srcCompat="@drawable/cat1" />
+
+    <TextView
+        android:id="@+id/activity_main_lblCatName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:background="@color/colorAccent"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingHorizontal="@dimen/padding_small"
+        android:paddingVertical="@dimen/padding_small"
+        android:text="@string/activity_main_txtCatNameText"
+        android:textColor="@android:color/background_light"
+        android:textSize="@dimen/normal_text_dimen"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_main_imgCat"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/activity_main_ImageSeparator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <TextView
+        android:id="@+id/activity_main_lblName"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="8dp"
+        android:text="@string/activity_main_lblNameText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_imgCat" />
+
+    <EditText
+        android:id="@+id/activity_main_txtName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginStart="@dimen/margin_small"
+        android:ems="10"
+        android:hint="@string/activity_main_txtNameHintText"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_lblName" />
+
+    <TextView
+        android:id="@+id/activity_main_lblEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/tivity_main_lblEmailText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_txtName" />
+
+    <TextView
+        android:id="@+id/tivity_main_lblPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/tivity_main_lblPhoneText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toEndOf="@+id/activity_main_lblEmail"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_txtName" />
+
+    <EditText
+        android:id="@+id/activity_main_txtEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:ems="10"
+        android:hint="@string/activity_main_txtEmailHintText"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toStartOf="@+id/activity_main_imgEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_lblEmail" />
+
+    <EditText
+        android:id="@+id/activity_main_txtPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:ems="9"
+        android:hint="@string/activity_main_txtPhoneHintText"
+        android:inputType="phone"
+        app:layout_constraintEnd_toStartOf="@+id/activity_main_imgPhone"
+        app:layout_constraintStart_toStartOf="@+id/tivity_main_lblPhone"
+        app:layout_constraintTop_toBottomOf="@+id/tivity_main_lblPhone" />
+
+    <ImageView
+        android:id="@+id/activity_main_imgEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_main_txtEmail"
+        app:layout_constraintEnd_toStartOf="@+id/activity_main_txtPhone"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_lblEmail"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_action_email" />
+
+    <ImageView
+        android:id="@+id/activity_main_imgPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_main_txtPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tivity_main_lblPhone"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_action_phone" />
+
+
+    <TextView
+        android:id="@+id/activity_main_lblAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/activity_main_lblAddressText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_txtEmail" />
+
+    <EditText
+        android:id="@+id/activity_main_txtAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginStart="@dimen/margin_small"
+        android:ems="10"
+        android:hint="@string/activity_main_txtAddressHintText"
+        android:inputType="textPostalAddress"
+        app:layout_constraintEnd_toStartOf="@+id/activity_main_ImgMap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_lblAddress" />
+
+    <ImageView
+        android:id="@+id/activity_main_ImgMap"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_main_txtAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_lblAddress"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_action_map" />
+
+    <TextView
+        android:id="@+id/activity_main_lblWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/activity_main_lblWebText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_txtAddress" />
+
+    <EditText
+        android:id="@+id/activity_main_txtWeb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginStart="@dimen/margin_small"
+        android:ems="10"
+        android:hint="@string/activity_main_txtWebHintText"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/activity_main_imgWeb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_lblWeb"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/activity_main_imgWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_main_txtWeb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_lblWeb"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_action_web" />
+
+
+</android.support.constraint.ConstraintLayout>

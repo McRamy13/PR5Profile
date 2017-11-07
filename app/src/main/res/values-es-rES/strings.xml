@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Perfil</string>
+    <string name="activity_main_lblNameText">Nombre</string>
+    <string name="activity_main_txtNameHintText">(Nombre)</string>
+    <string name="tivity_main_lblEmailText">Correo</string>
+    <string name="tivity_main_lblPhoneText">Móvil</string>
+    <string name="activity_main_txtEmailHintText">(Correo)</string>
+    <string name="activity_main_txtPhoneHintText">(Móvil)</string>
+    <string name="activity_main_lblAddressText">Dirección</string>
+    <string name="activity_main_txtAddressHintText">(Dirección)</string>
+    <string name="activity_main_txtWebHintText">(Url)</string>
+    <string name="activity_main_lblWebText">Web</string>
+    <string name="title_activity_grid_cats">Seleccione un avatar</string>
+    <string name="activity_main_txtCatNameText">Jacob</string>
+    <string name="activity_main_lblCat2NameText">Sofia</string>
+    <string name="activity_main_lblCat3NameText">Noah</string>
+    <string name="activity_main_lblCat4NameText">Dante</string>
+    <string name="activity_main_lblCat5NameText">Dylan</string>
+    <string name="activity_main_txtCat6NameText">Blacky</string>
+    <string name="message_utils_noMailAppMessage">No hay aplicación de email</string>
+    <string name="message_utils_noPhoneAppMessage">No hay aplicación de teléfono</string>
+    <string name="message_utils_NoMapsAppMessage">No hay aplicación de email</string>
+    <string name="message_utils_wrongUrlMessage">URL incorrecta. Formato: (http://www.web.com)</string>
+    <string name="message_utils_noBrowserAppMessage">No hay aplicación de navegación</string>
+    <string name="title_activity_cat_list">Lista de perfiles</string>
+    <string name="title_main_activity">Perfil</string>
+    <string name="empty_view_lblMessageText">Lo sentimos, no hemos encontrado usuarios en nuestra BD.\n Agregue uno</string>
+    <string name="apply">Aplicar</string>
+</resources>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Profile</string>
+    <string name="activity_main_lblNameText">Name</string>
+    <string name="activity_main_txtNameHintText">(Name)</string>
+    <string name="tivity_main_lblEmailText">Email</string>
+    <string name="tivity_main_lblPhoneText">Phone Number</string>
+    <string name="activity_main_txtEmailHintText">(Email)</string>
+    <string name="activity_main_txtPhoneHintText">(Phone)</string>
+    <string name="activity_main_lblAddressText">Address</string>
+    <string name="activity_main_txtAddressHintText">(Address)</string>
+    <string name="activity_main_txtWebHintText">(Url)</string>
+    <string name="activity_main_lblWebText">Web</string>
+    <string name="title_activity_grid_cats">Select Avatar</string>
+    <string name="activity_main_txtCatNameText">Jacob</string>
+    <string name="activity_main_lblCat2NameText">Sofia</string>
+    <string name="activity_main_lblCat3NameText">Noah</string>
+    <string name="activity_main_lblCat4NameText">Dante</string>
+    <string name="activity_main_lblCat5NameText">Dylan</string>
+    <string name="activity_main_txtCat6NameText">Blacky</string>
+    <string name="message_utils_noMailAppMessage">No email app</string>
+    <string name="message_utils_noPhoneAppMessage">No phone app</string>
+    <string name="message_utils_NoMapsAppMessage">No email app</string>
+    <string name="message_utils_wrongUrlMessage">wrong URL. Format (http://www.url.com)</string>
+    <string name="message_utils_noBrowserAppMessage">No browser app</string>
+    <string name="title_activity_cat_list">Profile list</string>
+    <string name="title_main_activity">Profile</string>
+    <string name="empty_view_lblMessageText">Sorry, we didn\'t found users in our DB.\n Press the FAB to add one</string>
+    <string name="apply">Apply</string>
+    <string name="undo">undo</string>
+    <string name="snackbar_message">Deleted item</string>
+</resources>
