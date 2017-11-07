@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Profile</string>
+    <string name="app_name">Profile creator</string>
     <string name="activity_main_lblNameText">Name</string>
     <string name="activity_main_txtNameHintText">(Name)</string>
     <string name="tivity_main_lblEmailText">Email</string>

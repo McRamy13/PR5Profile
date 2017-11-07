@@ -1,4 +1,4 @@
-package com.example.usuario.pr5_profile.ui.main;
+package com.example.usuario.pr6_profile.ui.main;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -14,16 +14,15 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.usuario.pr5_profile.R;
-import com.example.usuario.pr5_profile.ui.grid_cat.GridCatsActivity;
-import com.example.usuario.pr5_profile.ui.model.Avatar;
-import com.example.usuario.pr5_profile.ui.utils.Constants;
-import com.example.usuario.pr5_profile.ui.utils.IntentsUtils;
-import com.example.usuario.pr5_profile.ui.utils.MessageUtils;
-import com.example.usuario.pr5_profile.ui.utils.NetworkUtils;
-import com.example.usuario.pr5_profile.ui.utils.ValidationUtils;
+import com.example.usuario.pr6_profile.R;
+import com.example.usuario.pr6_profile.ui.grid_cat.GridCatsActivity;
+import com.example.usuario.pr6_profile.ui.model.Avatar;
+import com.example.usuario.pr6_profile.ui.utils.Constants;
+import com.example.usuario.pr6_profile.ui.utils.IntentsUtils;
+import com.example.usuario.pr6_profile.ui.utils.MessageUtils;
+import com.example.usuario.pr6_profile.ui.utils.NetworkUtils;
+import com.example.usuario.pr6_profile.ui.utils.ValidationUtils;
 
 import butterknife.BindColor;
 import butterknife.BindDrawable;
@@ -31,7 +30,6 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.OnFocusChange;
-import butterknife.OnItemSelected;
 import butterknife.OnTextChanged;
 
 import static butterknife.OnTextChanged.Callback.TEXT_CHANGED;

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.usuario.pr5_profile">
+    package="com.example.usuario.pr6_profile">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/profile_icon"
@@ -13,16 +12,16 @@
         android:roundIcon="@mipmap/profile_icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.main.MainActivity"
+        <activity android:name="com.example.usuario.pr6_profile.ui.main.MainActivity"
             android:label="@string/title_main_activity"
-            android:parentActivityName=".ui.cat_list.CatListActivity"
+            android:parentActivityName="com.example.usuario.pr6_profile.ui.cat_list.CatListActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true">
         </activity>
         <activity
-            android:name=".ui.cat_list.CatListActivity"
+            android:name="com.example.usuario.pr6_profile.ui.cat_list.CatListActivity"
             android:label="@string/title_activity_cat_list"
-            android:parentActivityName=".ui.main.MainActivity"
+            android:parentActivityName="com.example.usuario.pr6_profile.ui.main.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,13 +29,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.grid_cat.GridCatsActivity"
+            android:name="com.example.usuario.pr6_profile.ui.grid_cat.GridCatsActivity"
             android:label="@string/title_activity_grid_cats"
-            android:parentActivityName=".ui.main.MainActivity"
+            android:parentActivityName="com.example.usuario.pr6_profile.ui.main.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.usuario.pr5_profile.ui.main.MainActivity" />
+                android:value="com.example.usuario.pr6_profile.ui.main.MainActivity" />
         </activity>
     </application>
 

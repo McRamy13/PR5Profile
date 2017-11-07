@@ -1,4 +1,4 @@
-package com.example.usuario.pr5_profile.ui.utils;
+package com.example.usuario.pr6_profile.ui.utils;
 
 import android.Manifest;
 import android.content.Context;

@@ -1,4 +1,4 @@
-package com.example.usuario.pr5_profile.ui.grid_cat;
+package com.example.usuario.pr6_profile.ui.grid_cat;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,8 +9,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.usuario.pr5_profile.R;
-import com.example.usuario.pr5_profile.ui.model.Avatar;
+import com.example.usuario.pr6_profile.R;
+import com.example.usuario.pr6_profile.ui.model.Avatar;
 
 import java.util.ArrayList;
 

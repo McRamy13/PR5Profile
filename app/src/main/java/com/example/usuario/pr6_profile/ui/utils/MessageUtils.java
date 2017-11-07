@@ -1,10 +1,9 @@
-package com.example.usuario.pr5_profile.ui.utils;
+package com.example.usuario.pr6_profile.ui.utils;
 
 import android.content.Context;
 import android.widget.Toast;
 
-import com.example.usuario.pr5_profile.R;
-import com.example.usuario.pr5_profile.ui.main.MainActivity;
+import com.example.usuario.pr6_profile.R;
 
 /**
  * Created by jannu on 1/11/17.

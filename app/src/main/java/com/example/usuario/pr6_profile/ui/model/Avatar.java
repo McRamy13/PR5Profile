@@ -1,4 +1,4 @@
-package com.example.usuario.pr5_profile.ui.model;
+package com.example.usuario.pr6_profile.ui.model;
 
 
 import android.os.Parcel;

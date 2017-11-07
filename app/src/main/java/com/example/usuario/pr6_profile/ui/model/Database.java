@@ -1,7 +1,6 @@
-package com.example.usuario.pr5_profile.ui.model;
+package com.example.usuario.pr6_profile.ui.model;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by jannu on 4/11/17.

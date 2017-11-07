@@ -1,19 +1,17 @@
-package com.example.usuario.pr5_profile.ui.cat_list;
+package com.example.usuario.pr6_profile.ui.cat_list;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.usuario.pr5_profile.R;
-import com.example.usuario.pr5_profile.ui.model.Avatar;
+import com.example.usuario.pr6_profile.R;
+import com.example.usuario.pr6_profile.ui.model.Avatar;
 
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
 

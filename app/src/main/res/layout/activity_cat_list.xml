@@ -5,7 +5,7 @@
     android:id="@+id/catListCoordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.usuario.pr5_profile.ui.cat_list.CatListActivity">
+    tools:context="com.example.usuario.pr6_profile.ui.cat_list.CatListActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

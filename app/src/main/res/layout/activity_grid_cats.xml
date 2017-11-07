@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.usuario.pr5_profile.ui.grid_cat.GridCatsActivity">
+    tools:context="com.example.usuario.pr6_profile.ui.grid_cat.GridCatsActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

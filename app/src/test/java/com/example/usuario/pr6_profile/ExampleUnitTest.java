@@ -1,4 +1,4 @@
-package com.example.usuario.pr5_profile;
+package com.example.usuario.pr6_profile;
 
 import org.junit.Test;
 

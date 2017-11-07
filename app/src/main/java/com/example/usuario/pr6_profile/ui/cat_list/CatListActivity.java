@@ -1,4 +1,4 @@
-package com.example.usuario.pr5_profile.ui.cat_list;
+package com.example.usuario.pr6_profile.ui.cat_list;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,16 +10,13 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.example.usuario.pr5_profile.R;
-import com.example.usuario.pr5_profile.ui.data.RepositoryImpl;
-import com.example.usuario.pr5_profile.ui.main.MainActivity;
-import com.example.usuario.pr5_profile.ui.model.Avatar;
-import com.example.usuario.pr5_profile.ui.model.Database;
-
-import java.util.ArrayList;
+import com.example.usuario.pr6_profile.R;
+import com.example.usuario.pr6_profile.ui.data.RepositoryImpl;
+import com.example.usuario.pr6_profile.ui.main.MainActivity;
+import com.example.usuario.pr6_profile.ui.model.Avatar;
+import com.example.usuario.pr6_profile.ui.model.Database;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

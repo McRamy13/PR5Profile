@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Perfil</string>
+    <string name="app_name">Creador de perfiles</string>
     <string name="activity_main_lblNameText">Nombre</string>
     <string name="activity_main_txtNameHintText">(Nombre)</string>
     <string name="tivity_main_lblEmailText">Correo</string>

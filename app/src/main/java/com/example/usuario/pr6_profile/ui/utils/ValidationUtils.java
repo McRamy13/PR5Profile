@@ -1,9 +1,7 @@
-package com.example.usuario.pr5_profile.ui.utils;
+package com.example.usuario.pr6_profile.ui.utils;
 
 import android.text.TextUtils;
 import android.util.Patterns;
-
-import org.w3c.dom.Text;
 
 public class ValidationUtils {
 
