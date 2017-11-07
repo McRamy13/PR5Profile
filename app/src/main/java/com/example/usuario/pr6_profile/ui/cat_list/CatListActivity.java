@@ -15,8 +15,8 @@ import android.widget.ListView;
 import com.example.usuario.pr6_profile.R;
 import com.example.usuario.pr6_profile.ui.data.RepositoryImpl;
 import com.example.usuario.pr6_profile.ui.main.MainActivity;
-import com.example.usuario.pr6_profile.ui.model.Avatar;
-import com.example.usuario.pr6_profile.ui.model.Database;
+import com.example.usuario.pr6_profile.base.model.Avatar;
+import com.example.usuario.pr6_profile.base.model.Database;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

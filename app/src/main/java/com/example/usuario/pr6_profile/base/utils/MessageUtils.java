@@ -1,4 +1,4 @@
-package com.example.usuario.pr6_profile.ui.utils;
+package com.example.usuario.pr6_profile.base.utils;
 
 import android.content.Context;
 import android.widget.Toast;

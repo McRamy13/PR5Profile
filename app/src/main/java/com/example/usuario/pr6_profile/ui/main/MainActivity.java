@@ -17,12 +17,12 @@ import android.widget.TextView;
 
 import com.example.usuario.pr6_profile.R;
 import com.example.usuario.pr6_profile.ui.grid_cat.GridCatsActivity;
-import com.example.usuario.pr6_profile.ui.model.Avatar;
-import com.example.usuario.pr6_profile.ui.utils.Constants;
-import com.example.usuario.pr6_profile.ui.utils.IntentsUtils;
-import com.example.usuario.pr6_profile.ui.utils.MessageUtils;
-import com.example.usuario.pr6_profile.ui.utils.NetworkUtils;
-import com.example.usuario.pr6_profile.ui.utils.ValidationUtils;
+import com.example.usuario.pr6_profile.base.model.Avatar;
+import com.example.usuario.pr6_profile.base.utils.Constants;
+import com.example.usuario.pr6_profile.base.utils.IntentsUtils;
+import com.example.usuario.pr6_profile.base.utils.MessageUtils;
+import com.example.usuario.pr6_profile.base.utils.NetworkUtils;
+import com.example.usuario.pr6_profile.base.utils.ValidationUtils;
 
 import butterknife.BindColor;
 import butterknife.BindDrawable;

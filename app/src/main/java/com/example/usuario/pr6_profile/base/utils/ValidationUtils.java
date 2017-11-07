@@ -1,4 +1,4 @@
-package com.example.usuario.pr6_profile.ui.utils;
+package com.example.usuario.pr6_profile.base.utils;
 
 import android.text.TextUtils;
 import android.util.Patterns;

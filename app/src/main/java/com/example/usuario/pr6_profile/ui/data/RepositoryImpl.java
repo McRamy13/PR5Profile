@@ -1,7 +1,7 @@
 package com.example.usuario.pr6_profile.ui.data;
 
-import com.example.usuario.pr6_profile.ui.model.Avatar;
-import com.example.usuario.pr6_profile.ui.model.Database;
+import com.example.usuario.pr6_profile.base.model.Avatar;
+import com.example.usuario.pr6_profile.base.model.Database;
 
 import java.util.ArrayList;
 
